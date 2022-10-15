@@ -17,6 +17,7 @@ import Doodle from './images/Doodle.png'
 import Web from './images/Web.png'
 import Con from './images/conveyor.png'
 import Dev from './images/devices.png'
+import Carousel from './components/Carousel'
 
 function Homepage() {
   return (
@@ -86,6 +87,9 @@ function Homepage() {
             <div className='flex justify-between items-center'>
                 <h4 className='text-white font-semibold text-2xl'>Collection</h4>
                 <Button text={'Get Started'} />
+            </div>
+            <div className='pt-16'>
+                <Carousel />
             </div>
         </div>
     </div>
