@@ -2,6 +2,7 @@ import { Bars4Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../images/logo.png'
+import { motion } from "framer-motion"
 
 /**
  * Navigation Bar for mobile devices
@@ -22,7 +23,11 @@ function MobileNavBar() {
             </div>
         <Bars4Icon onClick={showMenu} className='h-8 cursor-pointer' />
         </div>
-        {menu&&<div className='absolute space-y-16 h-screen w-3/4 top-0 right-0 bg-[#7700CF] z-10 pt-16 px-10'>
+        {menu&&<motion.div
+            initial={{opacity: 0, x: '5vw'}}
+            animate={{opacity: 1, x: 0}}
+            transition={{delay: 0.09, duration: 1}}
+            className='absolute space-y-16 min-h-screen w-3/4 top-0 right-0 bg-[#7700CF] z-10 pt-16 px-10'>
             <XMarkIcon onClick={showMenu} className='h-8 cursor-pointer float-right' />
             <div className="grid justify-end gap-5 font-bold text-lg text-right">
                 <NavLink>NFT Marketplace</NavLink>
@@ -30,7 +35,7 @@ function MobileNavBar() {
                 <NavLink>3D Creator</NavLink>
                 <NavLink>Contact Us</NavLink>
             </div>
-        </div>}
+        </motion.div>}
     </div>
   )
 }

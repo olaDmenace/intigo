@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Logo from '../images/logo.png'
 
 
@@ -14,7 +14,7 @@ function NavBar() {
         <div className='hidden md:block px-14'>
             <div className="flex justify-between items-center relative py-16">
                 <div>
-                    <img className='h-10' src={Logo} alt="" />
+                    <Link to={'/'}><img className='h-10' src={Logo} alt="" /></Link>
                     {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
                 </div>
                 <div className="flex gap-5 font-bold text-lg">
