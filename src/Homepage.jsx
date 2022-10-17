@@ -22,6 +22,7 @@ import Gallery from './components/Gallery'
 import Model from './images/Model.png'
 import Footer from './components/Footer'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 function Homepage() {
     return (
@@ -47,7 +48,7 @@ function Homepage() {
                                 Morph™ dashboard gives brands the ability to onboard, quote, design, and morph their
                                 digital assets into physical 3D printed products.
                         </motion.p>
-                        <Button text='Marketplace' />
+                        <Link to={'/marketplace'}><Button text='Marketplace' /></Link>
                     </div>
                     <img className='hidden md:block h-96 space-y-5 justify-self-center' src={Head} alt="" />
                 </div>

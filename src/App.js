@@ -1,5 +1,6 @@
 import Homepage from './Homepage';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import Marketplace from './pages/Marketplace';
 
 
 /**
@@ -16,7 +17,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='' element={<Homepage/>} />
+          <Route path='' element={<Homepage />} />
+          <Route path='/marketplace' element={<Marketplace />} />
         </Routes>
       </BrowserRouter>
     </div>

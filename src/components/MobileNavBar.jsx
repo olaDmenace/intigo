@@ -1,6 +1,6 @@
 import { Bars4Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Logo from '../images/logo.png'
 import { motion } from "framer-motion"
 
@@ -18,9 +18,9 @@ function MobileNavBar() {
   return (
     <div className='md:hidden relative px-10'>
         <div className="flex justify-between items-center relative pt-16">
-            <div>
+            <Link to={'/'}>
                 <img className='h-10' src={Logo} alt="" />
-            </div>
+            </Link>
         <Bars4Icon onClick={showMenu} className='h-8 cursor-pointer' />
         </div>
         {menu&&<motion.div
@@ -31,7 +31,7 @@ function MobileNavBar() {
             <XMarkIcon onClick={showMenu} className='h-8 cursor-pointer float-right' />
             <div className="grid justify-end gap-5 font-bold text-lg text-right">
                 <NavLink>NFT Marketplace</NavLink>
-                <NavLink>Marketplace</NavLink>
+                <NavLink to={'/marketplace'}>Marketplace</NavLink>
                 <NavLink>3D Creator</NavLink>
                 <NavLink>Contact Us</NavLink>
             </div>
