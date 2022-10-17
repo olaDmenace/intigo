@@ -33,7 +33,7 @@ function Footer() {
             <div>
                 <h4 className='font-semibold text-2xl'>Subscribe on our review newsletters</h4>
                 <label className='flex gap-1' htmlFor="">
-                    <input className='rounded h-9 w-4/6 text-[#1A002D] px-2' placeholder='Your Mail' type='email' />
+                    <input className='rounded h-9 w-4/5 text-[#1A002D] px-2' placeholder='Your Mail' type='email' />
                     <Button/>
                 </label>
             </div>

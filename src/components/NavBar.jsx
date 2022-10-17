@@ -19,7 +19,7 @@ function NavBar() {
                 </div>
                 <div className="flex gap-5 font-bold text-lg">
                     <NavLink>NFT Marketplace</NavLink>
-                    <NavLink>Marketplace</NavLink>
+                    <NavLink to={'/marketplace'}>Marketplace</NavLink>
                     <NavLink>3D Creator</NavLink>
                     <NavLink>Contact Us</NavLink>
                 </div>

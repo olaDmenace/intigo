@@ -33,8 +33,8 @@ function Homepage() {
                     <NavBar />
                     <MobileNavBar />
                 </div>
-                <div className='relative text-left grid md:grid-cols-2 md:grid-flow-col items-center px-10 md:px-14'>
-                    <div className='space-y-5'>
+                <div className='relative text-left grid md:flex justify-around px-10 md:px-14'>
+                    <div className='space-y-5 basis-1/2'>
                         <motion.h1
                             initial={{opacity: 0, y: '-4vw'}}
                             animate={{opacity: 1, y: 0}}
@@ -43,14 +43,15 @@ function Homepage() {
                         <motion.p
                             initial={{opacity: 0, y: '-4vw'}}
                             animate={{opacity: 1, y: 0}}
-                            transition={{delay: 1, duration: 1}}>
+                            transition={{delay: 1, duration: 1}}
+                            className='pb-10'>
                                 At Intigo 3D we transform 3D assets into bespoke physical products and replicas. Our
                                 Morph™ dashboard gives brands the ability to onboard, quote, design, and morph their
                                 digital assets into physical 3D printed products.
                         </motion.p>
                         <Link to={'/marketplace'}><Button text='Marketplace' /></Link>
                     </div>
-                    <img className='hidden md:block h-96 space-y-5 justify-self-center' src={Head} alt="" />
+                    <img className='hidden md:block h-96 space-y-5 align-self-center' src={Head} alt="" />
                 </div>
             </div>
             <div className='bg-[#FFF1FE] px-10 md:px-14'>
@@ -61,7 +62,7 @@ function Homepage() {
                 </div>
                 <div className='space-y-10 py-16'>
                     <div className='md:flex flex-row gap-5 items-center'>
-                        <img className='md:h-2/4 md:w-2/4 basis-1' src={Image} alt="" />
+                        <img className='md:h-2/4 md:w-2/4 basis-1/2' src={Image} alt="" />
                         <div className='text-left space-y-8'>
                             <h4 className='font-semibold text-2xl text-[#7700CF]'>Gaming , Collectibles, & web 3.0</h4>
                             <p className='text-[#161414]'>Intigo offers brands, creators, gaming companies, Web 3.0 and collectibles a bridge to create a physical product from a digital design
@@ -72,7 +73,7 @@ function Homepage() {
                         </div>
                     </div>
                     <div className='md:flex flex-row gap-5 items-center md:flex-row-reverse'>
-                        <img className='md:h-2/4 md:w-2/4 basis-1' src={Image2} alt="" />
+                        <img className='md:h-2/4 md:w-2/4 basis-1/2' src={Image2} alt="" />
                         <div className='text-left space-y-6'>
                             <h4 className='font-semibold text-2xl text-[#7700CF]'>Commercial Products</h4>
                             <p className='text-lg text-[#7700CF]'>(Automotive, Medical, industrial parts)</p>
