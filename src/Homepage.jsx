@@ -23,6 +23,8 @@ import Model from './images/Model.png'
 import Footer from './components/Footer'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import SignUp from './components/membership/SignUp'
+
 
 function Homepage() {
     return (
@@ -51,7 +53,7 @@ function Homepage() {
                         </motion.p>
                         <Link to={'/marketplace'}><Button text='Marketplace' /></Link>
                     </div>
-                    <img className='hidden md:block h-96 space-y-5 align-self-center' src={Head} alt="" />
+                    <img className='hidden md:block h-96 self-start' src={Head} alt="" />
                 </div>
             </div>
             <div className='bg-[#FFF1FE] px-10 md:px-14'>
@@ -142,6 +144,9 @@ function Homepage() {
             </div>
             <div>
                 <Footer />
+            </div>
+            <div>
+                <SignUp />
             </div>
         </div>
     )

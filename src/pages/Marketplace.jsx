@@ -29,7 +29,7 @@ function Marketplace() {
                     <p className=''>Are you looking to purchase in short runs & Ship or do you need Intigo to ship to the end customer?</p>
                     <input className='w-full rounded h-10 border p-1' type="text" name="" id="" />
                 </label>
-                <input className='border rounded w-1/3 justify-self-end cursor-pointer bg-[#7700CF] text-white h-9' type="button" value="Submit" />
+                <input className='border rounded w-1/3 justify-self-end cursor-pointer bg-[#7700CF] text-white h-9 transition ease-in-out delay-150 duration-300 hover:bg-[#8b14e3]' type="button" value="Submit" />
             </form>
         </div>
         <Footer />
