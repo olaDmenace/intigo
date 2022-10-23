@@ -1,5 +1,5 @@
 import Homepage from './Homepage';
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Marketplace from './pages/Marketplace';
 
 

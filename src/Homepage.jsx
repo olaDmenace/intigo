@@ -23,7 +23,8 @@ import Model from './images/Model.png'
 import Footer from './components/Footer'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import SignUp from './components/membership/SignUp'
+import CreateNewPassword from './components/membership/CreateNewPassword'
+
 
 
 function Homepage() {
@@ -38,18 +39,18 @@ function Homepage() {
                 <div className='relative text-left grid md:flex justify-around px-10 md:px-14'>
                     <div className='space-y-5 basis-1/2'>
                         <motion.h1
-                            initial={{opacity: 0, y: '-4vw'}}
-                            animate={{opacity: 1, y: 0}}
-                            transition={{delay: 0.09, duration: 1}}
+                            initial={{ opacity: 0, y: '-4vw' }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.09, duration: 1 }}
                             className='text-2xl md:text-4xl font-semibold'>Turn Your Digital Assets<br />Into Physical Products</motion.h1>
                         <motion.p
-                            initial={{opacity: 0, y: '-4vw'}}
-                            animate={{opacity: 1, y: 0}}
-                            transition={{delay: 1, duration: 1}}
+                            initial={{ opacity: 0, y: '-4vw' }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 1, duration: 1 }}
                             className='pb-10'>
-                                At Intigo 3D we transform 3D assets into bespoke physical products and replicas. Our
-                                Morph™ dashboard gives brands the ability to onboard, quote, design, and morph their
-                                digital assets into physical 3D printed products.
+                            At Intigo 3D we transform 3D assets into bespoke physical products and replicas. Our
+                            Morph™ dashboard gives brands the ability to onboard, quote, design, and morph their
+                            digital assets into physical 3D printed products.
                         </motion.p>
                         <Link to={'/marketplace'}><Button text='Marketplace' /></Link>
                     </div>
@@ -135,7 +136,7 @@ function Homepage() {
             </div>
             <div className='bg-[#1A002D] py-12 px-10 md:px-14 space-y-10'>
                 <p className='text-white md:w-4/6 w-5/5 text-center mx-auto'>
-                    Intigo has received multiple patents based on security and trust to ensure 
+                    Intigo has received multiple patents based on security and trust to ensure
                     that your creations and work is secure while ensuring parties are paid for their efforts
                     throughout the supply chain. Intigo 3D was awarded (3) 20 year, nonprovisional patent by the US Government
                     (US Patent #10,546,105) for an Inventory Control and Distribution System for 3D Designs & 3D Printers.
@@ -146,7 +147,7 @@ function Homepage() {
                 <Footer />
             </div>
             <div>
-                <SignUp />
+                <CreateNewPassword />
             </div>
         </div>
     )
