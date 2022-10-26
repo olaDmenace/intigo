@@ -23,7 +23,6 @@ import Model from './images/Model.png'
 import Footer from './components/Footer'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import CreateNewPassword from './components/membership/CreateNewPassword'
 
 
 
@@ -145,9 +144,6 @@ function Homepage() {
             </div>
             <div>
                 <Footer />
-            </div>
-            <div>
-                <CreateNewPassword />
             </div>
         </div>
     )
