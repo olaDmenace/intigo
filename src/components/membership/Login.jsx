@@ -4,7 +4,7 @@ import SignUp from './SignUp'
 import ForgotPassword from './ForgotPassword'
 
 
-function Login() {
+function Login({ showLogin }) {
 
     // Controls the state for the signup popup on the login UI
     const [sign, setSign] = useState(false)
@@ -22,7 +22,7 @@ function Login() {
 
     return (
         <div>
-            <Popup>
+            <Popup onCancel={() => showLogin(false)}>
                 <h2 className='text-[#7700CF] text-3xl text-center font-bold'>Welcome Back.</h2>
                 <form className='grid gap-5 mx-auto w-4/5 py-12' action="">
                     <label htmlFor="">

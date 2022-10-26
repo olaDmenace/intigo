@@ -21,8 +21,8 @@ function MobileNavBar() {
     const [signup, setSignUp] = useState(false)
     const [login, setLogin] = useState(false)
 
-    const showLogin = () => {
-        setLogin(!login)
+    const showLogin = (arg) => {
+        setLogin(arg)
     }
 
 
@@ -50,12 +50,12 @@ function MobileNavBar() {
                         <NavLink to={'/marketplace'}>Marketplace</NavLink>
                         <NavLink>3D Creator</NavLink>
                         <NavLink>Contact Us</NavLink>
-                        <NavLink onClick={showLogin}>Log In</NavLink>
+                        <NavLink onClick={() => showLogin(true)}>Log In</NavLink>
                         <NavLink onClick={showSignUp}>Sign Up</NavLink>
                     </div>
                 </motion.div>}
             </div>
-            {login && <Login />}
+            {login && <Login showLogin={showLogin} />}
             {signup && <SignUp />}
         </div>
     )

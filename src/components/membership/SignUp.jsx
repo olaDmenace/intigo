@@ -14,7 +14,8 @@ function SignUp() {
         <div>
             <Popup>
                 <h2 className='text-[#7700CF] text-3xl text-center font-bold'>Welcome</h2>
-                <h6 className='text-[#7700CF] text-lg text-center'>Set Up Your Account</h6>
+                <h6 className='text-[#7700CF] text-lg text-center w-2/3 mx-auto'>Set Up A Customer Account
+                    Get Products Made Specifically For You</h6>
                 <form className='grid gap-3 mx-auto w-4/5 py-10' action="">
                     <fieldset className='grid md:grid-flow-col gap-3 mx-auto w-full'>
                         <label htmlFor="">
