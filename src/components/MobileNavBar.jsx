@@ -26,8 +26,8 @@ function MobileNavBar() {
     }
 
 
-    const showSignUp = () => {
-        setSignUp(!signup)
+    const showSignUp = (arg) => {
+        setSignUp(arg)
     }
 
     return (
@@ -47,7 +47,7 @@ function MobileNavBar() {
                     <XMarkIcon onClick={showMenu} className='h-8 cursor-pointer float-right' />
                     <div className="grid justify-end gap-5 font-bold text-lg text-right">
                         <NavLink>NFT Marketplace</NavLink>
-                        <NavLink to={'/marketplace'}>Marketplace</NavLink>
+                        <NavLink to={'/dimensionMarketarketPlace'}>Marketplace</NavLink>
                         <NavLink>3D Creator</NavLink>
                         <NavLink>Contact Us</NavLink>
                         <NavLink onClick={() => showLogin(true)}>Log In</NavLink>
@@ -56,7 +56,7 @@ function MobileNavBar() {
                 </motion.div>}
             </div>
             {login && <Login showLogin={showLogin} />}
-            {signup && <SignUp />}
+            {signup && <SignUp showSignUp={showSignUp} />}
         </div>
     )
 }

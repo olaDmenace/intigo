@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Popup from '../Popup'
 import Login from './Login'
 
-function SignUp() {
+function SignUp({ showSignUp }) {
 
     const [login, setLogin] = useState(false)
 
@@ -12,7 +12,7 @@ function SignUp() {
     }
     return (
         <div>
-            <Popup>
+            <Popup onCancel={() => showSignUp(false)}>
                 <h2 className='text-[#7700CF] text-3xl text-center font-bold'>Welcome</h2>
                 <h6 className='text-[#7700CF] text-lg text-center w-2/3 mx-auto'>Set Up A Customer Account
                     Get Products Made Specifically For You</h6>

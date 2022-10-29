@@ -51,7 +51,7 @@ function Homepage() {
                             Morph™ dashboard gives brands the ability to onboard, quote, design, and morph their
                             digital assets into physical 3D printed products.
                         </motion.p>
-                        <Link to={'/marketplace'}><Button text='Marketplace' /></Link>
+                        <Link to={'/dimensionMarketarketPlace'}><Button text='Marketplace' /></Link>
                     </div>
                     <img className='hidden md:block h-96 self-start' src={Head} alt="" />
                 </div>

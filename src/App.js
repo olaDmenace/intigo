@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path='' element={<Homepage />} />
           <Route path='/marketplace' element={<Marketplace />} />
-          <Route path='dimensionMarketarketPlace' element={<DimensionMarketPlace />} />
+          <Route path='/dimensionMarketarketPlace' element={<DimensionMarketPlace />} />
         </Routes>
       </BrowserRouter>
     </div>
