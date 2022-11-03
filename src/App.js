@@ -2,6 +2,7 @@ import Homepage from './Homepage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Marketplace from './pages/Marketplace';
 import DimensionMarketPlace from './components/DimensionMarketPlace/DimensionMarketPlace'
+import ProductPage from './pages/ProductPage';
 
 
 /**
@@ -21,6 +22,7 @@ function App() {
           <Route path='' element={<Homepage />} />
           <Route path='/marketplace' element={<Marketplace />} />
           <Route path='/dimensionMarketarketPlace' element={<DimensionMarketPlace />} />
+          <Route path='/product' element={<ProductPage />} />
         </Routes>
       </BrowserRouter>
     </div>

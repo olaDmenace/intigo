@@ -32,9 +32,9 @@ function NavBar() {
                     {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
                 </div>
                 <div className="flex gap-5 font-bold text-lg">
-                    <NavLink>NFT Marketplace</NavLink>
+                    <NavLink>Brand / 3D Creator</NavLink>
                     <NavLink to={'/dimensionMarketarketPlace'}>Marketplace</NavLink>
-                    <NavLink>3D Creator</NavLink>
+                    <NavLink>3D Print Factories</NavLink>
                     <NavLink>Contact Us</NavLink>
                 </div>
                 <div className='flex gap-5'>

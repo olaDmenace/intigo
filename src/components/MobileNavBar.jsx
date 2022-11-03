@@ -46,9 +46,9 @@ function MobileNavBar() {
                     className='absolute space-y-16 min-h-screen w-3/4 top-0 right-0 bg-[#7700CF] z-10 pt-16 px-10'>
                     <XMarkIcon onClick={showMenu} className='h-8 cursor-pointer float-right' />
                     <div className="grid justify-end gap-5 font-bold text-lg text-right">
-                        <NavLink>NFT Marketplace</NavLink>
+                        <NavLink>Brand / 3D Creator</NavLink>
                         <NavLink to={'/dimensionMarketarketPlace'}>Marketplace</NavLink>
-                        <NavLink>3D Creator</NavLink>
+                        <NavLink>3D Print Factories</NavLink>
                         <NavLink>Contact Us</NavLink>
                         <NavLink onClick={() => showLogin(true)}>Log In</NavLink>
                         <NavLink onClick={showSignUp}>Sign Up</NavLink>
