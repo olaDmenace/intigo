@@ -37,13 +37,13 @@ function Homepage() {
                     <NavBar />
                     <MobileNavBar />
                 </div>
-                <div className='relative text-left grid md:flex justify-around px-10 md:px-14'>
-                    <div className='space-y-5 basis-1/2'>
+                <div className='text-left grid md:grid-flow-col md:grid-cols-2 gap-5 w-10/12 mx-auto'>
+                    <div className='space-y-5 col-span-1'>
                         <motion.h1
                             initial={{ opacity: 0, y: '-4vw' }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.09, duration: 1 }}
-                            className='text-2xl md:text-4xl font-semibold'>Transform Your Digital Assets<br />Into Physical Products</motion.h1>
+                            className='text-2xl md:text-4xl font-semibold'>Transform Your Digital Assets Into Physical Products</motion.h1>
                         <motion.p
                             initial={{ opacity: 0, y: '-4vw' }}
                             animate={{ opacity: 1, y: 0 }}
@@ -55,19 +55,21 @@ function Homepage() {
                         </motion.p>
                         <Link to={'/dimensionMarketarketPlace'}><Button text='Become 3D Creator' /></Link>
                     </div>
-                    <img className='hidden md:block h-96 self-start' src={Head} alt="" />
+                    <div className='hidden md:block md:col-span-1 w-full h-full'>
+                        <img src={Head} alt="" />
+                    </div>
                 </div>
             </div>
-            <div className='px-10 md:px-14'>
+            <div className='grid gap-10'>
                 <div className='gap-5 grid py-5 md:py-10 md:grid-flow-col'>
                     <IconBox img={Cart} header={'Monetize the Hype'} text={'Speed to market (weeks vs. months)'} />
                     <IconBox img={Chart} header={'No Overhead Risk'} text={'(exact short runs/on demand)'} />
                     <IconBox img={Infinity} header={'Breaking the Mould'} text={'(Unlimited Options & Variations)'} />
                 </div>
-                <div className='space-y-10 py-16'>
-                    <div className='md:flex flex-row gap-5 items-center'>
-                        <img className='md:h-2/4 md:w-2/4 basis-1/2' src={Image2} alt="" />
-                        <div className='text-left space-y-8'>
+                <div className='space-y-10 w-10/12 mx-auto'>
+                    <div className='grid md:grid-flow-col md:grid-cols-2 gap-5 items-center'>
+                        <img className='col-span-1' src={Image2} alt="" />
+                        <div className='space-y-8'>
                             <h4 className='font-semibold text-2xl text-[#7700CF]'>Gaming , Collectibles, & web 3.0</h4>
                             <p className='text-[#161414]'>Intigo offers brands, creators, gaming companies, Web 3.0 and collectibles a bridge to create a physical product from a digital design
                                 asset. Use our dashboard to Mint 3D files & offer NFT’s with a physical purpose. Attach a QR code
@@ -76,9 +78,9 @@ function Homepage() {
                             <Button text={'Get Started'} />
                         </div>
                     </div>
-                    <div className='md:flex flex-row gap-5 items-center md:flex-row-reverse'>
-                        <img className='md:h-2/4 md:w-2/4 basis-1/2' src={Image} alt="" />
-                        <div className='text-left space-y-6'>
+                    <div className='grid md:grid-flow-col md:grid-cols-2 gap-5 items-center'>
+                        <img className='col-span-1 rounded-lg shadow-lg md:order-last' src={Image} alt="" />
+                        <div className='space-y-6 md:order-1'>
                             <h4 className='font-semibold text-2xl text-[#7700CF]'>Commercial Products</h4>
                             <p className='text-[#161414]'>We help our brands & Creators successfully commercialise
                                 their digital products by creating 3D prototypes, or short-run, low volume 3D
@@ -100,27 +102,29 @@ function Homepage() {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#1A002D] py-10 px-10 md:px-14'>
-                <div className='space-y-5 md:flex justify-between pt-5'>
-                    <h4 className='text-white font-semibold text-2xl md:w-1/2'>
-                        Morph Digital Products Physical On Our Marketplace
-                    </h4>
-                    <Button text={'Get Started'} />
-                </div>
-                <div>
-                    <Gallery />
-                </div>
-                <div className='flex justify-between'>
-                    <h4 className='text-white font-semibold text-2xl'>NFT Collection</h4>
-                    <Button text={'Get Started'} />
-                </div>
-                <div className='pt-16'>
-                    <Carousel />
+            <div className='bg-[#1A002D] py-10'>
+                <div className='space-y-10 w-10/12 mx-auto'>
+                    <div className='space-y-5 md:flex justify-between pt-5'>
+                        <h4 className='text-white font-semibold text-2xl md:w-1/2'>
+                            Morph Digital Products Physical On Our Marketplace
+                        </h4>
+                        <Button text={'Get Started'} />
+                    </div>
+                    <div>
+                        <Gallery />
+                    </div>
+                    <div className='flex justify-between'>
+                        <h4 className='text-white font-semibold text-2xl'>NFT Collection</h4>
+                        <Button text={'Get Started'} />
+                    </div>
+                    <div className='pt-16'>
+                        <Carousel />
+                    </div>
                 </div>
             </div>
-            <div className='px-10 py-10 md:px-14'>
-                <div className='md:flex flex-row gap-5 items-center'>
-                    <img className='md:w-1/2 md:h-1/3' src={Model} alt="" />
+            <div className='w-10/12 mx-auto py-10'>
+                <div className='grid md:grid-flow-col md:grid-cols-2 gap-5 items-center'>
+                    <img className='col-span-1' src={Model} alt="" />
                     <div className='text-left space-y-8 basis-1/2'>
                         <h4 className='font-semibold text-3xl text-[#7700CF]'>
                             Work with the intigo team on Bespoke Projects
